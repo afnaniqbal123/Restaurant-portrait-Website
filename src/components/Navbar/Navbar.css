@@ -6,6 +6,8 @@
     background: var(--color-black);
 
     padding: 1rem 2rem;
+    position: fixed;
+    z-index: 1;
 }
 
 .app__navbar-logo {
@@ -17,6 +19,26 @@
 .app__navbar-logo img {
     width: 150px;
 }
+
+.app__navbar-cart {
+    margin-left: auto;
+    cursor: pointer;
+  }
+  
+  .app__navbar-cart svg {
+    color: #fff;
+  }
+
+  .cart__quantity {
+    position: relative;
+    top: -10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 12px;
+  }
 
 .app__navbar-links {
     flex: 1;

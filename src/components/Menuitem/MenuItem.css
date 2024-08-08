@@ -33,3 +33,23 @@
     justify-content: flex-end;
     align-items: flex-end;
 }
+
+.app__menuitem-add {
+    position: relative;
+    top: 10px;
+    width: 30%;
+    left: 130px;
+    padding: 10px 20px;
+    background-color: #0C0C0C;
+    font-family: var(--font-base);
+    font-weight: bolder;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .app__menuitem-add:hover {
+    background-color: #bfa76d;
+  }

@@ -1,0 +1,123 @@
+/* Cart.css */
+.cart {
+    padding: 2rem 4rem;
+    border: 1px solid var(--color-golden);
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.cart h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cart p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cart__items {
+    margin-top: 20px;
+}
+
+.cart__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: var(--color-dark-gray);
+    border: 1px solid var(--color-golden);
+    border-radius: 5px;
+}
+
+.cart__item-details {
+    flex: 1;
+}
+
+.cart__item-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.cart__item-quantity button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: var(--color-golden);
+    border: none;
+    color: var(--color-black);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart__item-quantity span {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.cart__checkout-button {
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    width: 50%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--color-golden);
+    color: var(--color-black);
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media screen and (min-width: 2000px) {
+    .cart__item {
+        font-size: 1.5rem;
+    }
+
+    .cart__item-quantity button {
+        font-size: 1.2rem;
+    }
+
+    .cart__checkout-button {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .cart {
+        padding: 2rem 2rem;
+    }
+
+    .cart__item {
+        flex-direction: column;
+    }
+
+    .cart__item-quantity {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .cart {
+        padding: 2rem 1rem;
+    }
+    .cart h1 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 30px;
+    }
+
+    .cart__item-quantity {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .cart h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}

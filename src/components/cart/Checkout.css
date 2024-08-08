@@ -1,0 +1,76 @@
+/* Checkout.css */
+.checkout {
+    padding: 2rem 4rem;
+    border: 2px solid var(--color-golden);
+    background: var(--color-black);
+    color: var(--color-white);
+    
+}
+
+.checkout h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 80px;
+    font-family: var(--font-base);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-size: 32px;
+}
+
+.checkout form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.checkout form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid var(--color-golden);
+    background-color: var(--color-dark-gray);
+    color: var(--color-white);
+    border-radius: 5px;
+}
+
+.checkout form button {
+    padding: 10px 20px;
+    background-color: var(--color-golden);
+    color: var(--color-black);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media screen and (min-width: 2000px) {
+    .checkout form input, 
+    .checkout form button {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .checkout {
+        padding: 2rem 2rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .checkout {
+        padding: 2rem 1rem;
+    }
+
+    .checkout form {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .checkout h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
